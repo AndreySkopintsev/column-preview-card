@@ -5,25 +5,60 @@
 }
 
 body{
+    background: hsl(0, 0%, 95%);
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 15px;
+}
+
+h1{
+    color: hsl(0, 0%, 95%);
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 75%;
+}
+
+button{
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    background: hsl(0, 0%, 95%);
+    mix-blend-mode: screen;
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 120px;
 }
 
 .main{
-    margin: 20px;
-    border: 1px solid black;
+    margin: 60px 20px;
     height: 1200px;
     width: 400px;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .car {
-    background: hsl(31, 77%, 52%);
     display: flex;
     padding: 0 40px;
     flex-direction: column;
     justify-content: space-around;
-    border-bottom: 1px solid black;
     height: 400px;
     width: 100%;
+}
+
+.car.sedan{
+    background: hsl(31, 77%, 52%);
+    
+}
+
+.car.suv{
+    background: hsl(184, 100%, 22%);
+}
+
+.car.luxury{
+    background: hsl(179, 100%, 13%);
 }
